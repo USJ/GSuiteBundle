@@ -1,0 +1,30 @@
+{
+    "name": "usj/gsuite-bundle",
+    "description": "Symfony Google GSuite integration",
+    "type": "symfony-bundle",
+    "require": {
+        "google/apiclient": "^2.2",
+        "symfony/framework-bundle": "^2.8 || ^3.0 || ^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "symfony/yaml": "^2.8 || ^3.0 || ^4.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "USJ\\GSuiteBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "USJ\\GSuiteBundle\\Tests\\": "/Tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "USJ Development Team",
+            "email": "dev@usj.edu.mo"
+        }
+    ]
+}
