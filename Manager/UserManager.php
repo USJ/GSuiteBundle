@@ -4,9 +4,8 @@ namespace USJ\GSuiteBundle\Manager;
 use Google_Service_Directory;
 use Google_Service_Directory_User;
 use Psr\Log\LoggerAwareTrait;
-use USJ\USJGSuiteBundle\Client\DomainSpecificClient;
-use USJ\USJGSuiteBundle\Model\UserInterface;
-use USJ\USJGSuiteBundle\Model\UserManagerInterface;
+use USJ\GSuiteBundle\Model\UserInterface;
+use USJ\GSuiteBundle\Model\UserManagerInterface;
 
 class UserManager implements UserManagerInterface
 {
@@ -18,7 +17,7 @@ class UserManager implements UserManagerInterface
     protected $directoryService;
 
     /**
-     * @var DomainSpecificClient
+     * @var \Google_Client
      */
     private $client;
 

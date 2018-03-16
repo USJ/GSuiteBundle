@@ -1,7 +1,7 @@
 <?php
 
 
-namespace USJ\USJGSuiteBundle\Model;
+namespace USJ\GSuiteBundle\Model;
 
 
 interface UserManagerInterface
