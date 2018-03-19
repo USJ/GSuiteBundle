@@ -90,7 +90,7 @@ class UserManager implements UserManagerInterface
     /**
      * {@inheritdoc}
      */
-    public function has(string $id): boolean
+    public function has(string $id): bool
     {
         return (bool) $this->getDirectoryService()->users->get($id);
     }

@@ -13,7 +13,7 @@ class UserManagerTest extends TestCase
     public function testTransformUserWhenInsert()
     {
         $userMock = $this->createMock(TestUser::class);
-        $userMock->method('getGoogleDirectoryName')->expects($this->once());
+        $userMock->expects($this->once())->method('getGoogleDirectoryName');
 
         $subject = new UserManager($this->createMock(\Google_Client::class));
 

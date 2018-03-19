@@ -64,5 +64,5 @@ interface UserManagerInterface
      *
      * @return bool
      */
-    public function has(string $id): boolean;
+    public function has(string $id): bool;
 }
