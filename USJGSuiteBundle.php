@@ -4,7 +4,9 @@
 namespace USJ\GSuiteBundle;
 
 
-class USJGSuiteBundle
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class USJGSuiteBundle extends Bundle
 {
 
 }
