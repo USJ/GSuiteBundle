@@ -14,6 +14,10 @@ use USJ\GSuiteBundle\Model\UserManagerInterface;
 
 class USJGSuiteExtension extends Extension
 {
+    public function getAlias()
+    {
+        return 'usj_gsuite';
+    }
 
     /**
      * {@inheritdoc}
