@@ -56,7 +56,7 @@ class GroupManager implements GroupManagerInterface
         } while ($nextPageToken = $result->nextPageToken);
     }
 
-    public function isUserInGroup($groupEmail, UserInterface $user): boolean
+    public function isUserInGroup($groupEmail, UserInterface $user): bool
     {
         return (bool)$this->getDirectoryService()->members
             ->hasMember($groupEmail, $user->getGoogleEmail())

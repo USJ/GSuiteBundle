@@ -17,7 +17,7 @@ interface GroupManagerInterface
 
     public function listMembersInGroup($groupEmail): \Iterator;
 
-    public function isUserInGroup($groupEmail, UserInterface $user): boolean;
+    public function isUserInGroup($groupEmail, UserInterface $user): bool;
 
     public function findGroupsByUser(UserInterface $user): \Iterator;
 
