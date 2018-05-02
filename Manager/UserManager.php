@@ -92,7 +92,15 @@ class UserManager implements UserManagerInterface
      */
     public function has(string $id): bool
     {
-        return (bool) $this->getDirectoryService()->users->get($id);
+        try {
+            return (bool) $this->getDirectoryService()->users->get($id);
+        } catch (\Google_Service_Exception $e) {
+            if ($e->getCode() === 404) {
+                return false;
+            }
+
+            throw $e;
+        }
     }
 
     /**
