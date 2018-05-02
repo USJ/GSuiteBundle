@@ -84,7 +84,7 @@ class UserManager implements UserManagerInterface
      */
     public function getById(string $id): Google_Service_Directory_User
     {
-        $this->getDirectoryService()->users->get($id);
+        return $this->getDirectoryService()->users->get($id);
     }
 
     /**
