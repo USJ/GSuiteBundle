@@ -15,10 +15,9 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode    = $treeBuilder
-            ->root('usj_gsuite', 'array')
-            ->children();
+        $treeBuilder = new TreeBuilder('usj_gsuite');
+
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->arrayNode('clients')
